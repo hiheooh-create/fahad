@@ -4,10 +4,10 @@
   <!-- Adsterra popunder: sitewide client-side frequency cap = 1 per 60 seconds. -->
   <script>
     window.AD_LIMITS = {
-      popunderPerMinute: 1,
-      socialBarPerPage: 1,
-      nativeBannerPerPage: 1,
-      smartlinkPerPage: 1
+      popunderPerMinute: 100,
+      socialBarPerPage: 50,
+      nativeBannerPerPage: 50,
+      smartlinkPerPage: 50
     };
     window.AD_LIMIT_PER_MINUTE = window.AD_LIMITS.popunderPerMinute;
     window.AD_LIMIT_WINDOW_MS = 60 * 1000;
