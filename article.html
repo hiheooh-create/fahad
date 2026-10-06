@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ur" dir="ltr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Article — NayaDaur</title><link rel="stylesheet" href="styles.css">
+  <!-- Adsterra popunder: sitewide client-side frequency cap = 1 per 60 seconds. -->
+  <script>
+    window.AD_LIMITS = {
+      popunderPerMinute: 1,
+      socialBarPerPage: 1,
+      nativeBannerPerPage: 1,
+      smartlinkPerPage: 1
+    };
+    window.AD_LIMIT_PER_MINUTE = window.AD_LIMITS.popunderPerMinute;
+    window.AD_LIMIT_WINDOW_MS = 60 * 1000;
+    (function () {
+      const storageKey = 'nayadaur_popunder_last_load';
+      const scriptSrc = 'https://afders.org/1/25c7fbe2b3a72df08d5b3552e4b12de4';
+      try {
+        const lastLoad = Number(localStorage.getItem(storageKey) || 0);
+        if (Date.now() - lastLoad >= window.AD_LIMIT_WINDOW_MS) {
+          localStorage.setItem(storageKey, String(Date.now()));
+          const script = document.createElement('script');
+          script.dataset.cfasync = 'false';
+          script.src = scriptSrc;
+          document.head.appendChild(script);
+        }
+      } catch (error) {
+        console.warn('Ad frequency cap could not be stored.', error);
+      }
+    })();
+  </script></head>
+<body>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>NayaDaur</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#categories">Categories</a><a href="editor.html">Add Article</a></nav><button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">◐</button></div></header>
+  <main class="article-page container"><a class="back-link" href="index.html">← Back to articles</a><div id="articleRoot"></div><div class="article-ad ad-placeholder" data-ad-slot="article-top"><span>Advertisement</span><b>Ad space</b><small>Insert your approved Adsterra unit here.</small></div><div id="articleBody" class="article-body"></div><div class="article-ad ad-placeholder" data-ad-slot="article-bottom"><span>Advertisement</span><b>Ad space</b><small>Keep ads separate from navigation and article controls.</small></div><div class="article-end"><a class="btn btn-secondary" href="index.html">Read more articles</a></div></main>
+  <footer class="site-footer"><div class="container footer-wrap"><div><a class="brand" href="index.html"><span class="brand-mark">N</span><span>NayaDaur</span></a><p>Ideas worth your time.</p></div><p class="copyright">© 2026 NayaDaur</p></div></footer>
+  <script src="articles.js"></script><script src="app.js"></script>
+</body>
+</html>
