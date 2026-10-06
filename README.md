@@ -12,7 +12,7 @@ Yeh ek clean static article website hai. Aap articles browser ke `editor.html` p
 
 ## Adsterra code
 
-Site ke `index.html` aur `article.html` mein ad limits ka variable add hai: `window.AD_LIMITS = { popunderPerMinute: 1, socialBarPerPage: 1, nativeBannerPerPage: 1, smartlinkPerPage: 1 }`. Aapka supplied Adsterra popunder code sitewide localStorage window 60 seconds ke saath dynamically load hota hai, is liye ek visitor ko ek minute mein maximum ek load attempt diya jata hai.
+Site ke `index.html` aur `article.html` mein ad limits ka variable add hai: `window.AD_LIMITS = { popunderPerMinute: 1, socialBarPerPage: 1, nativeBannerPerPage: 1, smartlinkPerPage: 1 }`. Aapka supplied Adsterra popunder, Social Bar, Native Banner aur Smartlink snippets add kiye gaye hain. Popunder sitewide localStorage window 60 seconds ke saath dynamically load hota hai, is liye ek visitor ko ek minute mein maximum ek load attempt diya jata hai.
 
 Abhi site mein policy-safe placeholder display-ad slots bhi hain. Adsterra se approved code milne ke baad us code ko sirf relevant `.ad-placeholder` blocks mein add karein. Ads ko navigation, buttons, ya misleading elements ke bilkul paas na rakhein. Apne ads par click na karein aur users ko click karne ke liye encourage na karein.
 
